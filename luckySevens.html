@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sal's Pizzeria</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/journal/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=News+Cycle:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/resturantStyles.css">
+</head>
+
+<body><noscript> This page requires JavaScript.</noscript><script type="text/JavaScript" src="assets/js/luckysevens.js"></script>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand" href="#">Sal's Pizzeria</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="home.html" id="homeLink">Home&nbsp;<i class="fa fa-home"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="menu.html" id="menuLink">Menu&nbsp;<i class="icon ion-pizza"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contactUs.html" id="contactUsLink">Contact Us&nbsp;<i class="icon ion-android-contacts"></i></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="luckySevens.html" id="contactUsLink">Play a game&nbsp;<i class="icon ion-ios-game-controller-b"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 class="text-center">Welcome to Sal's!</h1>
+    <p class="text-center">We've been serving authentic Italian style pizza for the last 20 years!</p>
+    <hr>
+    <div id="homeJumbotron" style="padding:40px;background-image:url(&quot;assets/img/pizza-2000600_1920.jpg&quot;);">
+        <div class="jumbotron" style="background-color:rgba(238,238,238,0.7);">
+            <h2 class="text-center" style="padding:10px;">We're opening a new location in Frisco Texas!</h2>
+            <p class="text-center"><a class="btn btn-primary" role="button" href="menu.html">Check out our new menu!</a></p>
+        </div>
+    </div>
+    <hr>	<div class="container col-3" >
+		<h1>Lucky Sevens!</h1>
+
+		<form name="luckySevens" onsubmit=" return playLuckySevens();">
+
+			<label for="bet">Starting bet: </label>
+			<div class="input-group mb-">
+				<div class="input-group-prepend">
+					<span class="input-group-text">$</span>
+				</div>
+				<input type="number" id="bet" class="form-control">
+			</div><br>
+			<div class="text-center">
+				<button type="submit" id="submitButton" class="btn btn-primary">Play!</button>
+			</div>
+		</form><br>
+
+		<table id="results" class="table table-striped" style="display:none;">
+        <thead>
+            <tr>
+                <th class="text-center">Results</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Starting Bet</td>
+                <td><span id="start"></span></td>
+            </tr>
+            <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td><span id="rollsNum"></span></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won</td>
+                <td><span id="highestAmount"></span></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Hightest Amount Won</td>
+                <td><span id="highestRolls"></span></td>
+            </tr>
+        </tbody>
+    </table>
+
+	</div>
+    <hr><div id="contactInfo">
+    <p>1234 Preston Rd, Frisco, TX<br /></p>
+    <p>(555) 555-5555</p>
+</div>
+    <hr>
+    <footer>
+        <p>© 2019 Sal Governale (Steve Blackburn).</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/luckySevens.js"></script>
+</body>
+
+</html>
