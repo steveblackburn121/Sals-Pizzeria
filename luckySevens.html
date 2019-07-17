@@ -11,11 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/resturantStyles.css">
 	<noscript> This page requires JavaScript.</noscript>
-	<script type="text/JavaScript" src="assets/js/luckysevens.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md">
+    <nav class="navbar navbar-light navbar-expand-md col-lg col-md col-sm">
         <div class="container-fluid"><a class="navbar-brand" href="#">Sal's Pizzeria</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
@@ -28,16 +27,17 @@
             </div>
         </div>
     </nav>
-    <h1 class="text-center">Welcome to Sal's!</h1>
-    <p class="text-center">We've been serving authentic Italian style pizza for the last 20 years!</p>
+    <h1 class="text-center col-lg col-md col-sm">Welcome to Sal's!</h1>
+		<p class="text-center col-lg col-md col-sm">We've been serving authentic Italian style pizza for the last 20 years!</p>
     <hr>
-    <div id="homeJumbotron" style="padding:40px;background-image:url(&quot;assets/img/pizza-2000600_1920.jpg&quot;);">
+    <div class="col-lg col-md col-sm" id="homeJumbotron" style="padding:40px;background-image:url(&quot;assets/img/pizza-2000600_1920.jpg&quot;);">
         <div class="jumbotron" style="background-color:rgba(238,238,238,0.7);">
-            <h2 class="text-center" style="padding:10px;">We're opening a new location in Frisco Texas!</h2>
-            <p class="text-center"><a class="btn btn-primary" role="button" href="menu.html">Check out our new menu!</a></p>
+            <h2 class="text-center col-lg col-md col-sm" style="padding:10px;">We're opening a new location in Frisco Texas!</h2>
+				<p class="text-center"><a class="btn btn-primary col-lg-3 col-md-3 col-sm" role="button" href="menu.html">Check out our new menu!</a></p>
         </div>
     </div>
-    <hr>	<div class="container col-3" align="center">
+    <hr>	
+	<div class="container col-lg-3 col-md-2 col-sm" align="center">
 		<h1>Lucky Sevens!</h1>
         <h2><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h2>
 		<form name="luckySevens" onsubmit=" return playLuckySevens();">
@@ -47,13 +47,13 @@
 					<span class="input-group-text">$</span>
 				</div>
             <input type="number" id="bet" class="form-control">
-			</div><br>
+			</div><br />
 			<div class="text-center">
 				<button type="submit" id="submitButton" class="btn btn-primary">Play!</button>
 			</div>
 		</form><br>
 
-		<table id="results" class="table table-striped" style="display:none;">
+		<table id="results" class="table table-striped " style="display:none;">
         <thead>
             <tr>
                 <th class="text-center">Results</th>
@@ -81,17 +81,19 @@
     </table>
 
 	</div>
-    <hr><div id="contactInfo">
-    <p>1234 Preston Rd, Frisco, TX<br /></p>
-    <p>(555) 555-5555</p>
-</div>
-    <hr>
-    <footer>
+<hr />
+	<div class="col-lg col-md col-sm" id="contactInfo">
+		<p>1234 Preston Rd, Frisco, TX<br /></p>
+		<p>(555) 555-5555</p>
+	</div>
+<hr />
+    <footer class="col-lg col-md col-sm">
         <p>© 2019 Sal Governale (Steve Blackburn).</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/luckySevens.js"></script>
+	<script type="text/JavaScript" src="assets/js/luckysevens.js"></script>
 </body>
 
 </html>

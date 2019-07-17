@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md">
+    <nav class="navbar navbar-light navbar-expand-md col-lg col-md col-sm">
         <div class="container-fluid"><a class="navbar-brand" href="#">Sal's Pizzeria</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
@@ -27,43 +27,23 @@
             </div>
         </div>
     </nav>
-    <h1 class="text-center">Welcome to Sal's!</h1>
-    <p class="text-center">We've been serving authentic Italian style pizza for the last 20 years!</p>
+    <h1 class="text-center col-lg col-md col-sm">Welcome to Sal's!</h1>
+		<p class="text-center col-lg col-md col-sm">We've been serving authentic Italian style pizza for the last 20 years!</p>
     <hr>
-    <div id="homeJumbotron" style="padding:40px;background-image:url(&quot;assets/img/pizza-2000600_1920.jpg&quot;);">
+    <div class="col-lg col-md col-sm" id="homeJumbotron" style="padding:40px;background-image:url(&quot;assets/img/pizza-2000600_1920.jpg&quot;);">
         <div class="jumbotron" style="background-color:rgba(238,238,238,0.7);">
-            <h2 class="text-center" style="padding:10px;">We're opening a new location in Frisco Texas!</h2>
-            <p class="text-center"><a class="btn btn-primary" role="button" href="menu.html">Check out our new menu!</a></p>
+            <h2 class="text-center col-lg col-md col-sm" style="padding:10px;">We're opening a new location in Frisco Texas!</h2>
+				<p class="text-center"><a class="btn btn-primary col-lg-3 col-md-3 col-sm" role="button" href="menu.html">Check out our new menu!</a></p>
         </div>
     </div>
-    <hr><div style="padding:10px;">
-<script>
-    function validateForm() {
-  var x = document.forms["contactUsForm"]["name"].value;
-  if (x == "") {
-    alert("Please provide your name.");
-    return false;
-  }
-    var x = document.forms["contactUsForm"]["email"].value;
-  if (x == "") {
-    alert("Please provide your email address.");
-    return false;
-  }
-    var x = document.forms["contactUsForm"]["phone"].value;
-  if (x == "") {
-    alert("Please provide a phone number.");
-    return false;
-  }
-    else
-        alert("Your info has been submitted!")
-} 
-    </script>
+<hr />
+	<div class="col-lg col-md col-sm" style="padding:10px;">
     <form action="#" name="contactUsForm" method="post" id="contactUsForm" onsubmit="return validateForm()">
         <div class="table-responsive" id="contactUsTable">
-            <table class="table">
+            <table>
                 <thead>
                     <tr>
-                        <th colspan="12">Contact Us</th>
+                        <th colspan="6">Contact Us</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -81,7 +61,7 @@
                     </tr>
                     <tr>
                         <td>Reason for inquery:</td>
-                        <td><div class="option">
+                        <td><div class="option col-lg col-md col-sm">
                                 <select>
                                 <option value="catering">Catering</option>
                                 <option value="private">Private Party</option>
@@ -92,45 +72,65 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>Additional input:</td>
-                        <td style="height:100px;"><input type="text" class="form-control" id="additionalInfoForm" style="height:100px;" /></td>
+						<td><label for="info"> Additional Information:</label><br /></td>
+						<td><textarea id="info" name="info"></textarea><br /></td>
                     </tr>
                     <tr>
-                        <td>Have you been to the resturant?</td>
-                        <td class="d-flex">
-                            <div class="form-check" style="padding:20px;"><input type="radio" class="form-check-input" id="formCheck-1" /><label for="formCheck-1" class="form-check-label">Yes</label></div>
-                            <div class="form-check" style="padding:20px;"><input type="radio" class="form-check-input" id="formCheck-2" /><label for="formCheck-2" class="form-check-label">No</label></div>
-                        </td>
+						<td class="d-inline-flex"> Have you been to the resturant?</td>
+							<td><input type="radio" name="answer" value="yes"> Yes
+							<input type="radio" name="answer" value="no"> No<br /></td>
                     </tr>
                     <tr>
                         <td>Best days to contact you</td>
                         <td class="d-inline-flex">
-                            <div class="form-check" style="padding:20px;"><input type="checkbox" class="form-check-input" id="formCheck-3" /><label for="formCheck-3" class="form-check-label">M</label></div>
-                            <div class="form-check" style="padding:20px;"><input type="checkbox" class="form-check-input" id="formCheck-3" /><label for="formCheck-3" class="form-check-label">T</label></div>
-                            <div class="form-check" style="padding:20px;"><input type="checkbox" class="form-check-input" id="formCheck-3" /><label for="formCheck-3" class="form-check-label">W<br /></label></div>
-                            <div class="form-check" style="padding:20px;"><input type="checkbox" class="form-check-input" id="formCheck-3" /><label for="formCheck-3" class="form-check-label">Th</label></div>
-                            <div class="form-check" style="padding:20px;"><input type="checkbox" class="form-check-input" id="formCheck-3" /><label for="formCheck-3" class="form-check-label">F</label></div>
+                            <div class="form-check" style="padding:20px;"><input type="checkbox" class="form-check-input" id="formCheck-2" /><label for="formCheck-2" class="form-check-label">M</label></div>
+                            <div class="form-check" style="padding:20px;"><input type="checkbox" class="form-check-input" id="formCheck-2" /><label for="formCheck-2" class="form-check-label">T</label></div>
+                            <div class="form-check" style="padding:20px;"><input type="checkbox" class="form-check-input" id="formCheck-2" /><label for="formCheck-2" class="form-check-label">W<br /></label></div>
+                            <div class="form-check" style="padding:20px;"><input type="checkbox" class="form-check-input" id="formCheck-2" /><label for="formCheck-2" class="form-check-label">Th</label></div>
+                            <div class="form-check" style="padding:20px;"><input type="checkbox" class="form-check-input" id="formCheck-2" /><label for="formCheck-2" class="form-check-label">F</label></div>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="12"><button class="btn btn-primary" type="submit" value="submit">Submit</button></td>
+                        <td colspan="6"><button class="btn btn-primary" type="submit" value="submit">Submit</button></td>
                     </tr>
                 </tbody>
             </table>     
         </div>
     </form>
 </div>
-    <hr><div id="contactInfo">
-    <p>1234 Preston Rd, Frisco, TX<br /></p>
-    <p>(555) 555-5555</p>
-</div>
-    <hr>
-    <footer>
+<hr />
+	<div class="col-lg col-md col-sm" id="contactInfo">
+		<p>1234 Preston Rd, Frisco, TX<br /></p>
+		<p>(555) 555-5555</p>
+	</div>
+<hr />
+    <footer class="col-lg col-md col-sm">
         <p>© 2019&nbsp;Sal Governale (Steve Blackburn).</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/luckySevens.js"></script>
+	<script>
+		function validateForm() {
+		  var x = document.forms["contactUsForm"]["name"].value;
+		  if (x == "") {
+			alert("Please provide your name.");
+			return false;
+		  }
+			var x = document.forms["contactUsForm"]["email"].value;
+		  if (x == "") {
+			alert("Please provide your email address.");
+			return false;
+		  }
+			var x = document.forms["contactUsForm"]["phone"].value;
+		  if (x == "") {
+			alert("Please provide a phone number.");
+			return false;
+		  }
+			else
+				alert("Your info has been submitted!")
+		  } 
+    </script>
 </body>
 
 </html>
